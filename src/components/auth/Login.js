@@ -13,7 +13,7 @@ export const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault()
         const user = {
-            username: username.current.value,
+            email: username.current.value,
             password: password.current.value
         }
         loginUser(user)
@@ -36,10 +36,11 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Level Up</h1>
-                    <h2>Please sign in</h2>
+                    <h1>Pick Your Pay</h1>
+                    <h2>Where Hard Work Pays Off</h2>
+                    <h3>Please Sign In</h3>
                     <fieldset>
-                        <label htmlFor="inputUsername"> Username address </label>
+                        <label htmlFor="inputUsername"> Username  </label>
                         <input ref={username} type="username" id="username" className="form-control" placeholder="Username address" required autoFocus />
                     </fieldset>
                     <fieldset>
